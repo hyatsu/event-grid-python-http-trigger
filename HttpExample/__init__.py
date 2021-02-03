@@ -45,7 +45,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             return func.HttpResponse(
                 "Got a custom event",
                 status_code=200)
-        else
+        else:
             return func.HttpResponse(
                 "else",
                 status_code=200)
