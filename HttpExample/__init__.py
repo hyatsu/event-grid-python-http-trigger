@@ -36,12 +36,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         elif event['eventType'] == STORAGE_BLOB_CREATED_EVENT:
             print("Got BlobCreated event data, blob URI {}".format(
                 event_data['url']))
-            return func.HttpResponse(
-                "Got BlobCreated event data",
-                status_code=200)
+            # return func.HttpResponse(
+            #     "Got BlobCreated event data",
+            #     status_code=200)
         elif event['eventType'] == CUSTOM_EVENT:
             print("Got a custom event {} and received {}".format(
                 CUSTOM_EVENT, event_data))
-            return func.HttpResponse(
-                "Got a custom event",
-                status_code=200)
+            # return func.HttpResponse(
+            #     "Got a custom event",
+            #     status_code=200)
